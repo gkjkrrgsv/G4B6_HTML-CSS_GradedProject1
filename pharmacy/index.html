@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pharmacy Website</title>
+</head>
+<body>
+    <header>
+        <h1>Pharmacy</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Our Medicines</a>
+                <ul>
+                    <li><a href="#">Fever</a></li>
+                    <li><a href="#">Muscle Pains</a></li>
+                    <li><a href="#">Cold & Cough</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Health Care</a>
+                <ul>
+                    <li><a href="#">Baby Care</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="#">Home Care</a></li>
+                    <li><a href="#">Personal Care</a></li>
+                    <li><a href="#">Pet Care</a></li>
+                </ul>
+            </li>
+            <li><a href="labtest.html">Lab Test</a></li>
+        </ul>
+    </nav>
+
+    <section class="offers">
+        <img src="Animation/ani1.jpg" alt="Offer 1">
+        <img src="Animation/ani2.png" alt="Offer 2">
+        <img src="Animation/ani3.jpg" alt="Offer 3">
+        <img src="Animation/ani4.jpg" alt="Offer 4">
+        <img src="Animation/ani5.jpg" alt="Offer 5">
+        <!-- Add more images as needed -->
+    </section>
+
+    <h2>Covid Care</h2>
+
+    <section class="product-section">
+        <div class="product-category">
+            <div class="product">
+                <h3>Product Name 1</h3>
+                <img src="Products/c1.jpg" alt="Product Image 1">
+                <p>Price: $50</p>
+                <p>Price after Offer: $40</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product Name 1</h3>
+                <img src="Products/c2.jpg" alt="Product Image 1">
+                <p>Price: $50</p>
+                <p>Price after Offer: $40</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product Name 1</h3>
+                <img src="Products/c3.jpg" alt="Product Image 1">
+                <p>Price: $50</p>
+                <p>Price after Offer: $40</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product Name 1</h3>
+                <img src="Products/c4.jpg" alt="Product Image 1">
+                <p>Price: $50</p>
+                <p>Price after Offer: $40</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+        <h2>Diabetes Care</h2>
+    
+        <div class="product-category">
+            <div class="product">
+                <h3>Product Name 1</h3>
+                <img src="Products/d1.jpg" alt="Product Image 1">
+                <p>Price: $50</p>
+                <p>Price after Offer: $40</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product Name 1</h3>
+                <img src="Products/d2.jpg" alt="Product Image 1">
+                <p>Price: $50</p>
+                <p>Price after Offer: $40</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product Name 1</h3>
+                <img src="Products/d3.jpg" alt="Product Image 1">
+                <p>Price: $50</p>
+                <p>Price after Offer: $40</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Product Name 1</h3>
+                <img src="Products/d4.png" alt="Product Image 1">
+                <p>Price: $50</p>
+                <p>Price after Offer: $40</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+    </section>    
+    <footer>
+        <p>@copyright. Only for demonstration purposes</p>
+    </footer>
+</body>
+<script>
+    function hoverProduct(product) {
+        product.style.width = "105%";
+        product.style.height = "105%";
+    }
+
+    function unhoverProduct(product) {
+        product.style.width = "100%";
+        product.style.height = "100%";
+    }
+
+    function addToCart(button) {
+        button.parentNode.style.backgroundColor = "rgb(250, 234, 230)";
+        button.parentNode.style.border = "2px solid rgb(0, 255, 76)";
+    }
+</script>
+</html>
